@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Important Work</title>
+	<link rel="stylesheet" type="text/css" href="important-style.css"/>
+	<script src="build/bundle.js"></script>
+</head>
+
+<div id="important" class="noselect">Important Work</div>
+
+<div id="ui" class="noselect">
+	<div id="stats">
+		<div class="unlock unlock_ui">
+			Jiggle factor: <span id="value_jiggle"></span>
+		</div>
+		<div class="unlock unlock_ui">
+			Maximum jiggle reached: <span id="value_high"></span>
+		</div>
+		<div class="unlock unlock_juice">
+			Jiggle juice produced: <span id="value_juice"></span>
+		</div>
+	</div>
+	<div id="upgrades" class="unlock unlock_juice">
+		<div class="button" id="upgrade_minjiggle">Increase minimum jiggle<br/>
+			Costs <span id="cost_upgrade_minjiggle"></span> juice<br/>
+			Currently level <span id="level_upgrade_minjiggle"></span>
+		</div><br/>
+		<div class="button" id="upgrade_clickpower">Increase click power<br/>
+			Costs <span id="cost_upgrade_clickpower"></span> juice<br/>
+			Currently level <span id="level_upgrade_clickpower"></span>
+		</div><br/>
+		<div class="button" id="upgrade_jiggledamp">Decrease jiggle resistance<br/>
+			Costs <span id="cost_upgrade_jiggledamp"></span> juice<br/>
+			Currently level <span id="level_upgrade_jiggledamp"></span>
+		</div>
+	</div>
+	<img id="jum" src="images/jum.png" />
+</div>
