@@ -1,4 +1,3 @@
-import { doAction } from "@src/actions";
 import { round } from "@src/util"
 
 export var log = [];
@@ -35,7 +34,7 @@ export var defaults = {
 }
 
 export function init() {
-	doAction("initDefaults");
+	//doAction("initDefaults");
 
 	var buttons = document.querySelectorAll(".button");
 	for (var i = 0; i < buttons.length; i++) {
@@ -74,7 +73,7 @@ function doSteps(timeFactor) {
 	checkUnlocks();
 	var timeToDo = timeFactor + leftoverStepProgress;
 	while (timeToDo > stepTime) {
-		doAction("step");
+		//doAction("step");
 		timeToDo -= stepTime;
 	}
 	leftoverStepProgress = timeToDo;
@@ -155,7 +154,7 @@ function doAnimations() {
 var firstClick = true;
 
 document.addEventListener("click", function(event) {
-	doAction("jiggle");
+	//doAction("jiggle");
 	if (firstClick) {
 		firstClick = false;
 		audio.resume();

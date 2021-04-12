@@ -1,16 +1,7 @@
-// import App from './App.svelte';
+import App from '@src/components/App.svelte';
 
-// const app = new App({
-// 	target: document.body
-// });
+const app = new App({
+	target: document.getElementById("root")
+});
 
-// export default app;
-
-import { init } from "@src/important-code";
-
-if (document.readyState === "complete") {
-	init();
-}
-else {
-	document.addEventListener("DOMContentLoaded", init);
-}
+export default app;
